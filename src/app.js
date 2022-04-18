@@ -6,12 +6,12 @@ const express = require('express');
 class AppController{
     constructor(){
         this.express = express();
+
         this.middlewares();
         this.routes();
     }
 
     middlewares(){
-        // dar a aplicacao a capacidade de entender o json
         this.express.use(express.json());
     }
 
